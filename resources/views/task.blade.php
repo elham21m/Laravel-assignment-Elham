@@ -7,6 +7,7 @@
       <div class="content">
         <h1>{{ $task->title }}</h1>
         <p>{{ $task->description }}</p>
+        <p>{{$task->created_at}}</p>
         <h6><em>Created in :
           <?php echo Carbon\Carbon::parse($task->created_at)->format('d M Y') ?>
           </em></h6>
